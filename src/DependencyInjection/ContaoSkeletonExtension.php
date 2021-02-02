@@ -2,15 +2,7 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of [package name].
- *
- * (c) John Doe
- *
- * @license LGPL-3.0-or-later
- */
-
-namespace Contao\SkeletonBundle\DependencyInjection;
+namespace Agentur1601com\RequestLog\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -23,7 +15,7 @@ class ContaoSkeletonExtension extends Extension
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(__DIR__.'/../Resources/config')
+            new FileLocator(__DIR__ . '/../Resources/config')
         );
 
         $loader->load('services.yml');
