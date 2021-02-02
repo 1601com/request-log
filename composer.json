@@ -11,7 +11,7 @@
   ],
   "require": {
     "php": "^7.2 || ^8.0",
-    "contao/core-bundle": "^4.9",
+    "contao/core-bundle": "^4.4",
     "symfony/config": "^4.4 || ^5.1",
     "symfony/dependency-injection": "^4.4 || ^5.1",
     "symfony/http-kernel": "^4.4 || ^5.1"
@@ -20,10 +20,7 @@
     "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "require-dev": {
-    "contao/manager-plugin": "^2.0",
-    "contao/easy-coding-standard": "^2.0",
-    "phpunit/phpunit": "^8.4",
-    "symfony/phpunit-bridge": "^4.4 || ^5.1"
+    "contao/manager-plugin": "^2.0"
   },
   "extra": {
     "contao-manager-plugin": "Agentur1601com\\RequestLog\\ContaoManager\\Plugin"
