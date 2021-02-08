@@ -1,3 +1,17 @@
 services:
     _defaults:
         autoconfigure: true
+        autowire: true
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - ["setFramework", ["@contao.framework"]]
+
+        Symfony\Component\DependencyInjection\ContainerAwareInterface:
+            calls:
+                - ["setContainer", ["@service_container"]]
+    command.request.log.purge:
+        class: Agentur1601com\RequestLog\Command\RequestLogPurgeCommand
+        tags: ['console.command']
+        calls:
+            - ["setFramework", ["@contao.framework"]]

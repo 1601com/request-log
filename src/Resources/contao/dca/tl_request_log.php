@@ -13,30 +13,6 @@ $GLOBALS['TL_DCA']['tl_request_log'] =
                             ]
                     ]
             ],
-        'list' =>
-            [
-                #'sorting' =>
-                #    [
-                #        'mode' => 4,
-                #        'fields' => ['name'],
-                #        'panelLayout' => 'filter;search,limit',
-                #        'headerFields' => ['name', 'author', 'tstamp'],
-                #        'child_record_callback' => ['tl_style_sheet', 'listStyleSheet']
-                #    ],
-                'operations' =>
-                    [
-                        'edit' =>
-                            [
-                                'href' => 'table=tl_style',
-                                'icon' => 'edit.svg'
-                            ],
-                        'show' =>
-                            [
-                                'href' => 'act=show',
-                                'icon' => 'show.svg'
-                            ],
-                    ]
-            ],
         'palettes' =>
             [
                 'default' => '{title_legend},id,tstamp'
@@ -50,6 +26,30 @@ $GLOBALS['TL_DCA']['tl_request_log'] =
                 'tstamp' =>
                     [
                         'sql' => "int(10) unsigned NOT NULL default 0"
+                    ],
+                'requestMethod' =>
+                    [
+                        'sql' => "varchar(255) NOT NULL default ''"
+                    ],
+                'requestUri' =>
+                    [
+                        'sql' => "varchar(255) NOT NULL default ''"
+                    ],
+                'serverProtocol' =>
+                    [
+                        'sql' => "varchar(255) NOT NULL default ''"
+                    ],
+                'remoteAddress' =>
+                    [
+                        'sql' => "varchar(255) NOT NULL default ''"
+                    ],
+                'requestData' =>
+                    [
+                        'sql' => "text NOT NULL default ''"
+                    ],
+                'headerData' =>
+                    [
+                        'sql' => "text NOT NULL default ''"
                     ],
             ]
     ];
