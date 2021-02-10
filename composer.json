@@ -14,7 +14,8 @@
     "contao/core-bundle": "^4.4",
     "symfony/config": "^4.4 || ^5.1",
     "symfony/dependency-injection": "^4.4 || ^5.1",
-    "symfony/http-kernel": "^4.4 || ^5.1"
+    "symfony/http-kernel": "^4.4 || ^5.1",
+    "agentur1601com/core-bundle": "*"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
